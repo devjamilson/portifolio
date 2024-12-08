@@ -1,0 +1,70 @@
+/* Contêiner externo que contém os botões e o conteúdo rolável */
+.scrollWrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* Botão de rolagem para a esquerda */
+  .scrollButtonLeft,
+  .scrollButtonRight {
+    background-color: #cfcfcf;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+  }
+  
+  .scrollButtonLeft {
+    left: 10px;
+  }
+  
+  .scrollButtonRight {
+    right: 10px;
+  }
+  
+  .scrollButtonLeft:hover,
+  .scrollButtonRight:hover {
+    background-color: #2e2e2e;
+  }
+  
+  .scrollContainer {
+    overflow-x: auto; 
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch; 
+    padding: 16px;
+    margin-top: 1vh; 
+    margin-bottom: 10vh;
+    width: 100%; 
+  }
+  
+  /* O conteúdo dentro do scroll */
+  .scrollContent {
+    display: inline-flex; /* Itens dispostos em linha */
+    gap: 15px; /* Espaçamento entre os itens */
+  }
+  
+  /* Itens individuais dentro do scroll */
+  .scrollContent > * {
+    flex-shrink: 0; /* Evita que os itens encolham */
+    width: 200px; /* Tamanho fixo para os itens */
+    height: 200px; /* Tamanho fixo para os itens */
+    background-color: #ff0000; /* Cor de fundo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza a transição para efeitos */
+  }
+  
+  /* Efeito de hover nos itens */
+  .scrollContent > *:hover {
+    transform: translateY(-10px); /* Levanta o item ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra */
+  }
+  

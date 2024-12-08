@@ -1,0 +1,27 @@
+
+.container-habilities{
+    background-color: rgb(252, 252, 252);
+    height: 35vh;
+}
+
+.container-habilities h1, ul, li{
+    font-size: 19px;
+    margin-top: 1vh;
+    margin-left: 1vw; 
+}
+
+
+.container-project{
+    background-color: rgb(255, 255, 255);
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container-project h1{
+    font-size: 19px;
+   margin-top: 2vh;
+    margin-left: 1vw; 
+}

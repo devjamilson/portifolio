@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamilson - Portfólio de Dados & IA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="portfolio-container">
+        <aside class="sidebar">
+            <div class="sidebar-content">
+                <img src="images/profile.jpg" alt="Sua Foto" class="profile-pic">
+                <h1>Jamilson Ferreira</h1>
+                <p class="title">Análise de Dados | Engenharia de Dados | Inteligência Artificial</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/jamilson-ferreira-509b5a1b5/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/devjamilson" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:edujamilson@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section id="about">
+               <h2><i class="fas fa-user-circle icon-title"></i> Sobre Mim</h2>
+                    <p>
+                        Me chamo Jamilson. Comecei a trabalhar com dados ainda na universidade, em projetos voltados à análise e interpretação de informações. A partir disso, decidi seguir carreira na área e, desde então, venho desenvolvendo habilidades técnicas e analíticas.
+                    </p>
+                    <p>
+                        Atuo nas principais etapas do processo de dados: extração, modelagem, construção de pipelines e criação de dashboards voltados à tomada de decisão.
+                    </p>
+                    <p>
+                        Atualmente, estou me aprofundando em Inteligência Artificial, com foco em soluções preditivas e automações aplicadas a desafios de negócio.
+                    </p>
+                    <p>
+                        Busco aplicar dados de forma prática e estratégica, contribuindo com entregas que geram impacto e apoiam decisões baseadas em evidências.
+                    </p>
+
+            </section>
+
+            <section id="skills">
+                <h2><i class="fas fa-cogs icon-title"></i>Habilidades</h2>
+                <div class="skills-grid">
+                    <div class="skill-item"><i class="fab fa-python skill-icon"></i> Python</div>
+                    <div class="skill-item"><i class="fab fa-r-project skill-icon"></i> R  <small class="studying-label" >(Estudando)</small></div>
+                    <div class="skill-item"><i class="fas fa-database skill-icon"></i> SQL</div> 
+                    <div class="skill-item"><i class="fas fa-cogs skill-icon"></i> Pandas & NumPy</div>
+                   
+                    <div class="skill-item"><i class="fas fa-chart-bar skill-icon"></i> Power BI</div>
+                    <div class="skill-item"><i class="fab fa-aws skill-icon"></i> AWS (S3, EC2)  <small class="studying-label">(Estudando)</small></div>
+                    <div class="skill-item"><i class="fas fa-cloud skill-icon"></i> Azure (Blob, SQL, Data Factory)  <small class="studying-label">(Estudando)</small></div>
+                    <div class="skill-item"><i class="fas fa-wind skill-icon"></i> Airflow</div>
+                    <div class="skill-item"><i class="fab fa-docker skill-icon"></i> Docker  <small class="studying-label">(Estudando)</small></div>
+                    <div class="skill-item"><i class="fas fa-brain skill-icon"></i> TensorFlow & PyTorch  <small class="studying-label">(Estudando)</small></div>
+                    <div class="skill-item"><i class="fas fa-robot skill-icon"></i> Scikit-learn  <small class="studying-label">(Estudando)</small></div>
+                    <div class="skill-item"><i class="fas fa-fire skill-icon"></i> Spark</div>
+                    <div class="skill-item"><i class="fas fa-stream skill-icon"></i> Kafka</div>
+                   
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2><i class="fas fa-project-diagram icon-title"></i>Projetos</h2>
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="engenharia">Engenharia de Dados</button>
+                    <button class="filter-btn" data-filter="analise">Análise de Dados</button>
+                    <button class="filter-btn" data-filter="ia">Inteligência Artificial</button>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card" 
+                        data-category="analise" 
+                        data-image="images/projeto2.jpg"
+                        data-title="Dashboard de Vendas com Power BI"
+                        data-description="Desenvolvi um dashboard interativo em Power BI focado no monitoramento e análise de vendas. O painel reúne KPIs como faturamento total e por categoria, evolução de vendas comparada ao ano anterior, margem bruta, volume de vendas por produto e categoria, e custo total por segmento. Utilizei recursos como criação de métricas dinâmicas com DAX, gráficos de radar e rosca, comparações ano a ano e filtros interativos por produto e vendedor. O resultado foi um painel funcional, claro e orientado à tomada de decisões estratégicas pela equipe comercial."
+
+
+                        data-technologies="Power BI,Python,Modelagem Estrela"
+                        data-link="https://github.com/devjamilson/AnaliseVendas">
+                        <img src="images/projeto2.jpg" alt="Dashboard de Vendas com Power BI">
+                        <div class="project-info">
+                            <h4>Dashboard de Vendas com Power BI</h4>
+                            <p>Analise de dados financeiros</p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card"
+                        data-category="analise"
+                        data-image="images/projeto3.jpg"
+                        data-title="Análise dos Microdados do ENEM 2023"
+                        data-description="Implementação de um sistema de detecção de fraudes em transações financeiras usando redes neurais. O modelo foi treinado em um dataset desbalanceado, aplicando técnicas de oversampling (SMOTE) e construído com TensorFlow/Keras, atingindo alta precisão e recall na identificação de atividades suspeitas."
+                        data-technologies="Power BI,Python,Pandas,NumPy"
+                        data-link="">
+                        <img src="images/projeto3.jpg" alt="Análise dos Microdados do ENEM 2023">
+                        <div class="project-info">
+                            <h4>Análise dos Microdados do ENEM 2023</h4>
+                            <p>Análise de dados educacionais</p>
+                        </div>
+                    </div>
+
+                 
+
+                </div>
+            </section>
+
+            <section id="experience">
+                <h2><i class="fas fa-briefcase icon-title"></i>Experiência Profissional</h2>
+                <div class="experience-list">
+
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h3>Analista de Dados (Estágio)</h3>
+                            <span class="experience-date">Abr 2025 - O momento</span>
+                        </div>
+                        <p class="experience-company">Unifacisa Centro Universitário | Campina Grande, PB</p>
+                        <ul>
+                            <li>Análise e manipulação de dados através de processos de Extração, Transformação e Carga (ETL) para gerar insights estratégicos.</li>
+                            <li>Desenvolvimento e manutenção de dashboards e relatórios interativos com Power BI e/ou Looker Studio para acompanhamento de KPIs.</li>
+                            <li>Apoio na estruturação de bases de dados, garantindo a integridade, qualidade e eficiência das informações.</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h3>Engenheiro de Dados (Estágio)</h3>
+                            <span class="experience-date">Jun 2024 - Jan 2025</span>
+                        </div>
+                        <p class="experience-company">NUTES - Núcleo de Tecnologias Estratégicas da Saúde (UEPB) | Campina Grande, PB</p>
+                        <ul>
+                            <li>Construção de pipelines para extrair e transformar dados da área da saúde.</li>
+                            <li>Carga de dados processados no MinIO, um Object Storage com protocolo S3, para consumo por outras equipes.</li>
+                            <li>Disponibilização de dados para times de Análise e Ciência de Dados, alimentando insights e modelos de Machine Learning.</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h3>Engenharia de Dados (Estágio)</h3>
+                            <span class="experience-date">Set 2023 - Abr 2025</span>
+                        </div>
+                        <p class="experience-company">NUTES - Núcleo de Tecnologias Estratégicas da Saúde (UEPB) | Híbrido</p>
+                        <ul>
+                            <li>Desenvolvimento de pipelines de dados para projetos da Secretaria da Fazenda da Paraíba (Sefaz-PB).</li>
+                            <li>Utilização de Airflow para orquestração de tarefas, Kafka para streaming de dados e PostgreSQL/ClickHouse como bancos de dados.</li>
+                            <li>Análise fiscal e otimização de performance no processamento de grandes volumes de dados com formato Parquet.</li>
+                        </ul>
+                    </div>
+
+                    
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h3>Monitor de Banco de Dados</h3>
+                            <span class="experience-date">Set 2023 - Jul 2024</span>
+                        </div>
+                        <p class="experience-company">Universidade Estadual da Paraíba (UEPB) | Presencial</p>
+                        <ul>
+                            <li>Auxílio ao professor na disciplina de Banco de Dados, reforçando conceitos de SQL e modelagem de dados.</li>
+                            <li>Orientação e suporte aos alunos no desenvolvimento de projetos e exercícios da disciplina.</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h3>Membro Voluntário de Iniciação Científica</h3>
+                            <span class="experience-date">Dez 2021 - Abr 2023</span>
+                        </div>
+                        <p class="experience-company">NUTES - Núcleo de Tecnologias Estratégicas da Saúde (UEPB) | Campina Grande, PB</p>
+                        <ul>
+                            <li>Atuação como co-participante em projetos de Ciência de Dados, com foco na validação e limpeza de datasets.</li>
+                            <li>Utilização de Python e Pandas para filtrar e preparar dados de interesse para a pesquisa.</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h3>Extensionista</h3>
+                            <span class="experience-date">Mai 2022 - Fev 2023</span>
+                        </div>
+                        <p class="experience-company">Universidade Estadual da Paraíba (UEPB) | Campina Grande, PB</p>
+                        <ul>
+                            <li>Participação no projeto de extensão "Robótica Educativa", desenvolvendo atividades com Robótica e C++.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="education">
+                <h2><i class="fas fa-graduation-cap icon-title"></i>Formação Acadêmica</h2>
+                <div class="education-list">
+                    <div class="education-item">
+                        <h3>Bacharelado em Ciência da Computação</h3>
+                        <p class="education-institution">Universidade Estadual da Paraíba (UEPB) | Em andamento | 2021 - 2025 </p>
+                    </div>
+                    <div class="education-item">
+                        <h3>Bacharelado em Ciências Contábeis</h3>
+                        <p class="education-institution">Centro Universitário Uninassau | Em andamento | 2025 - 2028</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img id="modal-img" src="" alt="Imagem do Projeto">
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+            
+            <div class="modal-details">
+                <h4>Tecnologias Utilizadas</h4>
+                <div id="modal-techs" class="techs-container">
+                    </div>
+            </div>
+
+            <a id="modal-link" href="#" target="_blank" class="project-link-btn">
+                <i class="fab fa-github"></i> Ver Projeto
+            </a>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
